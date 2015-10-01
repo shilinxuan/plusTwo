@@ -5,7 +5,7 @@ body{
 	font-family: Microsoft Yahei;
 }
 
-.regedit_heading{
+.register_heading{
 	position: fixed;
 	top: 0;
 	background-color:#3cb371;
@@ -14,12 +14,11 @@ body{
 	line-height: 45px;
 	text-align: center;
 	color: #eee;
-	-webkit-box-shadow: 0px 0px 4px #ddd;
-	border-bottom: 2px solid #076;
+	-webkit-box-shadow: 0px -12px 20px 0px #195 inset;
 }
 
 
-.regedit_heading .back_icon{
+.register_heading .back_icon{
 	text-decoration:none;
 	font-size: 22px;
 	color: #eee;
@@ -27,7 +26,7 @@ body{
 	left: 30px;
 }
 
-.regedit_heading .back_icon:after{
+.register_heading .back_icon:after{
 	content: '';
 	width: 14px;
 	height: 14px;
@@ -42,41 +41,21 @@ body{
 	border-right: 0;
 }
 
-.regedit_title{
-	margin: 25% 0 10%;
-	text-align: center;
-	color: #eee;
-	font-size: 25px;
+.register_face{
+width:70px;
+height: 70px;
+border-radius: 50%;
+border: 1px solid #fff;
+margin:25% auto 10%;
+cursor: pointer;
+}
+
+.register_form label{
 	position: relative;
+	display: block;
 }
 
-.regedit_title:after{
-	content: '';
-	width: 30px;
-	height: 3px;
-	border-radius: 3px;
-	background-color: #eee;
-	-webkit-box-shadow:0 0 1 0 #fff;
-	margin-left: 50%;
-	position: absolute;
-	left: -95px;
-	top:17px;
-}
-
-.regedit_title:before{
-	content: '';
-	width: 30px;
-	height: 3px;
-	border-radius: 3px;
-	background-color: #eee;
-	-webkit-box-shadow:0 0 1 0 #fff;
-	margin-right: 50%;
-	position: absolute;
-	right: -95px;
-	top:17px;
-}
-
-.regedit_form input{
+.register_form input{
 	position: relative;
 	display:block;
 	margin:0 auto;
@@ -91,15 +70,10 @@ body{
 	font-size: 18px;
 	color:#eee;
 	outline: none;
-	-webkit-box-shadow: 0px 1px 2px 0px #ddd;
+	-webkit-box-shadow: 0px 0px 3px 1px #ddd inset;
 }
 
-.regedit_form label{
-	position: relative;
-	display: block;
-}
-
-.regedit_form label span{
+.register_form label span{
 	width: 35px;
 	height: 35px;
 	border-radius: 50%;
@@ -110,23 +84,36 @@ body{
 	background:url("img/icon.jpg") no-repeat; 
 }
 
-.regedit_form .user_name_icon{
+.register_form .verify_code{ 
+	margin-left: 15%;
+	width: 40%;
+	left: -3px;
+}
+
+.register_form .verify_code_img{
+	width: 25%;
+	height: 45px;
+	border-radius: 3px;
+	top:2px;
+}
+
+.register_form .user_name_icon{
 	background-position: -10px -10px;
 }
 
-.regedit_form .email_icon{
+.register_form .email_icon{
 	background-position: -10px -10px;
 }
 
-.regedit_form .password_icon{
+.register_form .password_icon{
 	background-position: -10px -10px;
 }
 
-.regedit_form .verify_password_icon{
+.register_form .verify_password_icon{
 	background-position: -10px -10px;
 }
 
-.regedit_form .regedit{
+.register_form .register_button{
 	display: block;
 	margin: 0 auto;
 	padding: 0;
@@ -138,5 +125,4 @@ body{
 	font-size: 20px;
 	color: #eee;
 	background-color: #3cb371;
-	-webkit-box-shadow: 0px 0px 2px 0px #eee;
-}
+	-webkit-box-shadow: 0px -12px 20px 0px #195 inset;}
