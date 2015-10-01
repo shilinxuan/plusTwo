@@ -4,6 +4,25 @@
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0;"/>
 	<link rel="stylesheet" type="text/css" href="css/register.css"> 
+	<script type="text/javascript" src="js/register.js"></script>
+	<script>
+		onload = function () {
+            var container = document.getElementById("verify_code_img");
+            var code = new vCode(container, {
+                len: 4,
+                bgColor: "#444444",
+                colors: [
+                    "#DDDDDD",
+                    "#DDFF77",
+                    "#77DDFF",
+                    "#99BBFF",
+                ]
+            });
+            document.getElementById("register_button").addEventListener("click", function () {
+                alert(code.verify(document.getElementById("verify_code").value));
+            }, false);
+        };
+	</script>
 </head>
 <body>
 	<div>
