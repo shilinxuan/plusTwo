@@ -77,11 +77,9 @@ cursor: pointer;
 	width: 35px;
 	height: 35px;
 	border-radius: 50%;
-	border: 1px solid #fff;
 	position: absolute;
 	top:8px;
-	right: 16%;
-	background:url("img/icon.jpg") no-repeat; 
+	right: 16%; 
 }
 
 .register_form .verify_code{ 
@@ -91,6 +89,7 @@ cursor: pointer;
 }
 
 .register_form .verify_code_img{
+	display: inline-block;
 	width: 25%;
 	height: 45px;
 	border-radius: 3px;
@@ -98,18 +97,22 @@ cursor: pointer;
 }
 
 .register_form .user_name_icon{
+	background:url("img/icon.jp") no-repeat;
 	background-position: -10px -10px;
 }
 
 .register_form .email_icon{
+	background:url("img/icon.jp") no-repeat;
 	background-position: -10px -10px;
 }
 
 .register_form .password_icon{
+	background:url("img/icon.jp") no-repeat;
 	background-position: -10px -10px;
 }
 
 .register_form .verify_password_icon{
+	background:url("img/icon.jp") no-repeat;
 	background-position: -10px -10px;
 }
 
